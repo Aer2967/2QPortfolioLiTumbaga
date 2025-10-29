@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="University of the Philippines, UP, Big 4, UPCAT, UPG">
+    <meta name="author" content="TUMBAGA, Rea Xyrille D.">
+    <title>University of the Philippines</title>
+    <link rel="icon" href="../assets/up_logo.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="../styles.css"> 
+    
+    <style>
+        /* Compressed Original Internal CSS */
+        /* Combined selectors where properties were the same (e.g., body, main, footer, media) */
+        
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd; /* Keeping original for internal style demonstration */
+        }
+
+        header {
+            background-color: #7b1113;
+            color: white;
+            padding: 20px 0;
+            position: relative; 
+            text-align: center;
+        }
+
+        .small-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 80px;
+            width: auto;
+        }
+
+        header .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header img.main-logo {
+            height: 160px;
+            width: 160px;
+        }
+
+        header h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 32px;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        /* Anchor tags within nav are now styled by the external CSS for link states */
+        
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .up-title {
+            font-family: "Times New Roman", Times, serif;
+            color: #7b1113;
+            text-align: center; 
+        }
+
+        h2, .media h2 { /* Combined */
+            color: #7b1113;
+            margin-top: 30px;
+            margin-bottom: 20px; /* Added from .media h2 */
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify; /* Applied to all paragraphs */
+        }
+
+        .about-content {
+            /* Now using CSS float as requested on the image, and clearing the float */
+            display: block; /* Overrides display: flex for the float demo */
+            margin-top: 20px;
+        }
+
+        .about-content img {
+            /* Applies CSS float on the image */
+            float: left;
+            width: 380px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 20px 10px 0; /* Add margin for text wrap */
+        }
+        
+        .about-content::after {
+            content: "";
+            display: table;
+            clear: both; /* Clear float after the image */
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+            display: block;
+            margin: 20px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #7b1113;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #7b1113;
+            color: white;
+        }
+
+        footer {
+            background-color: #7b1113;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcccb;
+            text-decoration: none;
+        }
+
+        .media { /* Combined from .media and .media-gallery */
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .media-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .media-gallery img {
+            width: 300px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../assets/common logo.png" alt="Group Common Logo" class="small-logo">
+        <div class="header-content">
+            <img src="../assets/up_logo.png" alt="UP Logo" class="main-logo">
+            <h1> The Big 4: Philippines’ Top Universities </h1>
+            <h1>Excellence in Ateneo, UP, UST, and La Salle</h1>
+            <nav>
+                <a href="../index.html">Home</a> 
+                <a href="https://noahfranciscoo.github.io/2QPortfolioLithiumFrancisco/public/2Q1GLithiumFrancisco.html">Ateneo</a> 
+                <a href="https://drijbl.github.io/2QPortfolioLiGabriel/public/21GLithiumGabriel.html">DLSU</a> 
+                <a href="https://iforgot222.github.io/2QPortfolioLiMagbanua/public/2Q1GLithiumMagbanua.html">UST</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="up-title">The University of the Philippines</h1>
+        <h2>About the University</h2>
+        <div class="about-content">
+            <img src="../assets/upsunkengarden.jpg" alt="UP Sunken Garden">
+            <p>
+                The University of the Philippines was founded on June 18, 1908 through Act No. 1870 to provide advanced instruction in literature, philosophy, science, and the arts. It began with units in Manila and Los Baños, eventually growing into a system of constituent universities including Diliman, Los Baños, Manila, Visayas, Baguio, Cebu, Mindanao, Tacloban, and the Open University. It is part of the “Big Four” universities in the Philippines, known for its rigorous admission standards, academic excellence, and the influence of its graduates in the country’s development.
+            </p>
+            <p>
+                UP's motto, “Honor and Excellence,” reflects a commitment to both intellectual rigor and moral responsibility. Students are called “Iskolar ng Bayan”, Scholars of the Nation, and are expected to give back to society through leadership, research, activism, and service. Across generations, UP students have been at the forefront of national issues, embodying the university’s mission of service to the Filipino people.
+            </p>
+            </div>
+        
+        <p>
+            UP alumni include some of the most influential figures in Philippine history: presidents, senators, National Artists, scientists, journalists, and public servants. Among its famous graduates are Nick Joaquin, Carlos “Botong” Francisco, and numerous leaders who have shaped politics, arts, science, and culture.
+        </p>
+        
+        <h2>University of the Philippines Hymn</h2>
+        <iframe 
+            src="https://www.youtube.com/embed/rfuLo2AX9VM"  
+            title="Hymn" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+
+        <h2>UP Campuses and UPG Cutoffs</h2>
+        <div class="oblation-container">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Campus</th>
+                            <th>UPG Cutoff (Appeal)</th>
+                            <th>Contact Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>UP Diliman</td><td>Not accepting appeals</td><td>up.edu.ph | +63 2 8981 8500</td></tr>
+                        <tr><td>UP Manila</td><td>2.580</td><td>upm.edu.ph | (02) 8526 7110</td></tr>
+                        <tr><td>UP Los Baños</td><td>2.800</td><td>uplb.edu.ph | (049) 536 2310</td></tr>
+                        <tr><td>UP Baguio</td><td>2.700</td><td>upb.edu.ph | (074) 442 3888</td></tr>
+                        <tr><td>UP Cebu</td><td>2.780</td><td>upcebu.edu.ph | (032) 232 2642</td></tr>
+                        <tr><td>UP Visayas</td><td>2.800</td><td>upv.edu.ph | (033) 315 9625</td></tr>
+                        <tr><td>UP Mindanao</td><td>2.800</td><td>upmin.edu.ph | (082) 293 0201</td></tr>
+                        <tr><td>UP Tacloban</td><td>2.800</td><td>uptac.up.edu.ph | (053) 832 3153</td></tr>
+                        <tr><td>UP Open University</td><td>2.800</td><td>upou.edu.ph | (049) 536 6001</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h2>The Oblation (3D Model)</h2>
+                <iframe 
+                    class="oblation-3d"
+                    title="UP Oblation" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    mozallowfullscreen="true" 
+                    webkitallowfullscreen="true" 
+                    allow="autoplay; fullscreen; xr-spatial-tracking" 
+                    xr-spatial-tracking 
+                    execution-while-out-of-viewport 
+                    execution-while-not-rendered 
+                    web-share 
+                    src="https://sketchfab.com/models/a87a1d13be6048d0879555c487371d37/embed?autostart=1&supersample=1&ui_controls=1&ui_infos=0&ui_inspector=0&ui_stop=0&ui_watermark=0&ui_theme=dark"> 
+                </iframe>
+                <p style="text-align: center; font-size: 0.8em;">You can click and drag the model to rotate it.</p>
+            </div>
+        </div>
+
+        <div class="media">
+            <h2>Images</h2>
+            <div class="media-gallery">
+                <img src="../assets/qchall.jpg" alt="UP Quezon Hall">
+                <img src="../assets/up graduates.jpg" alt="UP Graduates">
+                <img src="../assets/upoblation.jpg" alt="UP Oblation">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            References: 
+            <a href="https://up.edu.ph">UP Official Website</a> |
+            <a href="https://web.facebook.com/upsystem/?_rdc=1&_rdr#">UP Facebook Page</a> |
+            <a href="https://www.instagram.com/up.edu.ph/">UP Instagram Page</a>
+        </p>
+        <p>&copy; 2025 University of the Philippines Informational Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
