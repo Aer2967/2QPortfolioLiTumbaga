@@ -3,91 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="2Q Portfolio">
     <meta name="keywords" content="2Q Portfolio, Projects, Web Development">
     <meta name="author" content="TUMBAGA, Rea Xyrille D.">
-    <title>2Q Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Tumbaga's 2nd Quarter Portfolio</title>
+    
     <link rel="icon" href="./assets/image_logo.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="./2Q2GShared.css"> 
     <script src="script.js" defer></script>
     
     <style>
         body {
-            /* Override body font for a more 'journalistic' feel on the index page */
-            font-family: Georgia, serif; 
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, 
+                #000000 0%,
+                #FF0000 50%,
+                #000000 100%
+            ); 
+            min-height: 100vh;
+            display: grid; 
+            grid-template-columns: 280px 1fr;
+            color: #fff;
+        }
+        
+        header, main {
+            background: transparent;
+            color: #fff;
         }
 
         header {
-            background-color: #fff; /* White header for newspaper look */
-            color: #333;
-            border-bottom: 3px double #333; /* Double line separator for classic newspaper */
-            text-align: center;
-        }
-
-        header div {
-            padding: 10px 0;
-        }
-
-        nav {
-            margin-top: 15px;
-            padding: 10px 0;
-            border-top: 1px solid #ccc;
-        }
-
-        /* Apply the custom index-nav class for the specific link styling */
-        nav ul {
+            grid-column: 1 / 2;
             display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 10px;
+            background: #000000; 
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5); 
         }
-
-        /* Footer styling for index */
-        footer {
-            background-color: #f8f8f8;
-            border-top: 1px solid #ccc;
-            font-style: italic;
-            padding: 15px;
-        }
-
-        /* Icon next to heading (simulating a newspaper banner/masthead) */
+        
         .header-content-flex {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 15px;
+            padding-bottom: 30px; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+            width: 100%;
         }
 
         .header-icon {
-            height: 40px; /* Adjust size of your icon */
+            height: 60px;
             width: auto;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
         }
+
+        h1 {
+            font-size: 1.2em;
+            margin: 0;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            gap: 0; 
+        }
+
+        nav li {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            display: block; 
+            padding: 15px 20px;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1); 
+        }
+        
+        main {
+            grid-column: 2 / 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .main-title { 
+            font-size: 4em;
+            color: #fff;
+            margin-bottom: 0;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        .main-subtitle {
+            display: none;
+        }
+
+        footer {
+            display: none;
+        }
+
     </style>
 </head>
 <body>
     <header class="index-header">
-    <div class="header-content-flex"> 
-        <img src="./assets/image_logo.png" alt="Icon" class="header-icon">
-        <h1>My Portfolio of my work in the 2nd Qtr</h1>
-    </div>
-    <nav>
-        <ul class="index-nav">
-            <li> <a href="./public/2Q1LithiumTumbaga.html" data-desc="First Graded Work"> 1st and 2nd Graded Exercise </a> </li>
-            <li> <a href = "./public/Q21NGLithiumTumbaga.html" data-desc="First Non-graded"> First Non-Graded </a> </li>
-            <li> <a href = "./public/2Q1LithiumTumbaga copy.html" data-desc="Second Graded Work"> Second Graded </a> </li>
-            <li> <a href = "#" data-desc="Future Graded Work"> Third Graded </a>  </li>
-            <li> <a href = "#" data-desc="Final Group Project Link"> Access to our project </a> </li>
-        </ul>
-    </nav>
+        <div class="header-content-flex"> 
+            <img src="./assets/image_logo.png" alt="Icon" class="header-icon">
+            <h1>Access my works here:</h1>
+        </div>
+        <nav>
+            <ul class="index-nav">
+                <li> <a href="./public/2Q1LithiumTumbaga.html" data-desc="First Graded Work"> FIRST GRADED </a> </li>
+                <li> <a href = "./public/Q21NGLithiumTumbaga.html" data-desc="First Non-graded"> FIRST NON-GRADED </a> </li>
+                <li> <a href = "./public/2Q2LithiumTumbaga.html" data-desc="Second Graded Work"> SECOND GRADED </a> </li>
+                <li> <a href = "#" data-desc="Future Graded Work"> THIRD GRADED </a> </li>
+                <li> <a href = "#" data-desc="Final Group Project Link"> ACCESS TO OUR PROJECT </a> </li>
+            </ul>
+        </nav>
     </header>
+
     <main>
+        <h2 class="main-title">My 2nd Quarter Portfolio</h2> 
+        <h2>"Have a Big Mind and a Bigger Heart"</h2>
     </main>
-    <section>
-        <footer>
-            <hr/>
-            <p>Copyright <span>&copy; RX Tumbaga </span></p>
-        </footer>
-    </section>
+    
 </body>
 </html>
